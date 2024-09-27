@@ -1,0 +1,4 @@
+command: ["gunicorn", "-w", "4", "app:app"]
+env:
+- name: HTTP_PATH
+  value: "/sql/1.0/warehouses/475b94ddc7cd5211"

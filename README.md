@@ -21,3 +21,7 @@ Running locally:
 Deploying on Databricks:
 Syntax: databricks apps deploy APP_NAME SOURCE_CODE_PATH [flags]
 Example: databricks apps deploy jg-test-geo /Workspace/Users/james.graham@databricks.com/databricks-apps/geo -p e2-demo-field-eng
+
+
+Single command to upload and deploy: 
+`databricks apps deploy jg-test-geo /Workspace/Users/james.graham@databricks.com/databricks-apps/geo -p e2-demo-field-eng && sleep 10 && databricks workspace import-dir ./src /Workspace/Users/james.graham@databricks.com/databricks-apps/geo --overwrite --profile databricks-e2-demo-field-eng`

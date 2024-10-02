@@ -69,8 +69,12 @@ def create_map(filtered_df):
                 <button style="background-color:#4CAF50; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Street view</button>
             </a>
             <a target="_blank" href="https://idoxpa.westminster.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=002097RPLI000" style="text-decoration:none;">
-                <button style="background-color:#008CBA; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Planning permission history</button>
+                <button style="background-color:#008CBA; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Planning</button>
             </a>
+            <a target="_blank" href="https://www.rightmove.co.uk/house-prices/details/england-43232971-17999917?s=20540741cca129341b2c1f9fb069f197785a1f9d11f63c51093ee6918d182284#/" style="text-decoration:none;">
+                <button style="background-color:#FFA500; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Advert</button>
+            </a>
+            
         </div>
         """
         folium.Marker(location=[lat, lon], popup=popup_text).add_to(marker_cluster)

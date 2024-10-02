@@ -3,6 +3,9 @@ Databricks App - Geospatial points
 # Purpose
 Demo app showing plotting properties as points on a map. Designed to be used as a Databricks app, directly querying data from Databricks tables.
 
+# Prerequisites
+- [Optional] To display thumbnail images for properties on the map and to geocode address, you need an API key for the Google maps API. See https://developers.google.com/maps/documentation/javascript/get-api-key. Fill this in to the app.py file for the thumbnails or the 'Azure Geocode address.py' file for the Geocoding. 
+- [Optional] If deploying using Databricks asset bundles, fill in your Databricks URL in databricks.yml
 
 # Development
 To sync the changes from local to databricks:
